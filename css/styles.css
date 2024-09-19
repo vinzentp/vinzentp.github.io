@@ -3734,7 +3734,7 @@ textarea.form-control-lg {
   --bs-navbar-hover-color: rgba(0, 0, 0, 0.7);
   --bs-navbar-disabled-color: rgba(0, 0, 0, 0.3);
   --bs-navbar-active-color: rgba(0, 0, 0, 0.9);
-  --bs-navbar-brand-padding-y: 0.3125rem;
+  --bs-navbar-brand-padding-y: 0.0rem;
   --bs-navbar-brand-margin-end: 1rem;
   --bs-navbar-brand-font-size: 1.25rem;
   --bs-navbar-brand-color: rgba(0, 0, 0, 0.9);
@@ -10880,6 +10880,30 @@ p.lead {
   outline-color: #d48a6e;
 }
 
+.image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.image-container img {
+
+  max-width: 20rem;
+  max-height: 20rem;
+  border: 0.5rem solid rgba(255, 255, 255, 0.2);
+  object-fit: cover; 
+  display: block;
+}
+
+.img-profile-small{
+  max-width: 3rem;
+  margin-right: 10px;
+  border: 0.2rem solid rgba(255, 255, 255, 0.2);
+}
+
+.img-google-play{
+  width: 150px;
+}
+
 @media (min-width: 992px) {
   #sideNav {
     padding-left: 0;
@@ -10937,7 +10961,7 @@ p.lead {
   margin-right: 0;
 }
 .social-icons .social-icon:hover {
-  background-color: #bd5d38;
+  background-color: #064710;
 }
 
 .dev-icons {
