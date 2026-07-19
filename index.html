@@ -442,5 +442,25 @@
         <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
         <!-- Core theme JS-->
         <script src="js/scripts.js"></script>
+        <!-- GoatCounter analytics; visit /#toggle-goatcounter once per device to exclude your own views -->
+        <script>
+            (function() {
+                if (window.location.hash === '#toggle-goatcounter') {
+                    if (localStorage.getItem('skipgc') === 't') {
+                        localStorage.removeItem('skipgc');
+                        alert('GoatCounter: Zaehlung in diesem Browser wieder AKTIVIERT.');
+                    } else {
+                        localStorage.setItem('skipgc', 't');
+                        alert('GoatCounter: Dieser Browser wird ab jetzt NICHT mehr gezaehlt.');
+                    }
+                }
+                if (localStorage.getItem('skipgc') === 't') return;
+                var s = document.createElement('script');
+                s.async = true;
+                s.src = 'https://gc.zgo.at/count.js';
+                s.setAttribute('data-goatcounter', 'https://vinzentp.goatcounter.com/count');
+                document.head.appendChild(s);
+            })();
+        </script>
     </body>
 </html>
